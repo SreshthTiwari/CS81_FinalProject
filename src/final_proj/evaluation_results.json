@@ -1,0 +1,857 @@
+[
+  {
+    "scenario": "baseline",
+    "trial_id": 0,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 92,
+    "num_replans": 0,
+    "total_time": 0.0010068416595458984,
+    "replanning_time": 0.0,
+    "path": 92,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 1,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 92,
+    "num_replans": 0,
+    "total_time": 0.001016855239868164,
+    "replanning_time": 0.0,
+    "path": 92,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 2,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 92,
+    "num_replans": 0,
+    "total_time": 0.0011925697326660156,
+    "replanning_time": 0.0,
+    "path": 92,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 0,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 92,
+    "num_replans": 0,
+    "total_time": 0.0935525894165039,
+    "replanning_time": 0.0,
+    "path": 92,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 1,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 96,
+    "num_replans": 0,
+    "total_time": 0.08445239067077637,
+    "replanning_time": 0.0,
+    "path": 96,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 2,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 92,
+    "num_replans": 0,
+    "total_time": 0.0972287654876709,
+    "replanning_time": 0.0,
+    "path": 92,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 0,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 92,
+    "num_replans": 0,
+    "total_time": 0.09048652648925781,
+    "replanning_time": 0.0,
+    "path": 92,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 1,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 92,
+    "num_replans": 0,
+    "total_time": 0.08326506614685059,
+    "replanning_time": 0.0,
+    "path": 92,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 2,
+    "start_cell": [
+      170,
+      247
+    ],
+    "goal_cell": [
+      88,
+      256
+    ],
+    "success": true,
+    "path_length": 92,
+    "num_replans": 0,
+    "total_time": 0.09639668464660645,
+    "replanning_time": 0.0,
+    "path": 92,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 0,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 344,
+    "num_replans": 0,
+    "total_time": 0.10833621025085449,
+    "replanning_time": 0.0,
+    "path": 344,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 1,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 344,
+    "num_replans": 0,
+    "total_time": 0.13081717491149902,
+    "replanning_time": 0.0,
+    "path": 344,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 2,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 344,
+    "num_replans": 0,
+    "total_time": 0.13101959228515625,
+    "replanning_time": 0.0,
+    "path": 344,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 0,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 334,
+    "num_replans": 0,
+    "total_time": 1.1004142761230469,
+    "replanning_time": 0.0,
+    "path": 334,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 1,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 332,
+    "num_replans": 0,
+    "total_time": 0.9969022274017334,
+    "replanning_time": 0.0,
+    "path": 332,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 2,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 332,
+    "num_replans": 0,
+    "total_time": 0.9578087329864502,
+    "replanning_time": 0.0,
+    "path": 332,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 0,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 332,
+    "num_replans": 0,
+    "total_time": 0.9692554473876953,
+    "replanning_time": 0.0,
+    "path": 332,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 1,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 334,
+    "num_replans": 0,
+    "total_time": 0.9694247245788574,
+    "replanning_time": 0.0,
+    "path": 334,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 2,
+    "start_cell": [
+      97,
+      271
+    ],
+    "goal_cell": [
+      307,
+      150
+    ],
+    "success": true,
+    "path_length": 334,
+    "num_replans": 0,
+    "total_time": 0.960749626159668,
+    "replanning_time": 0.0,
+    "path": 334,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 0,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 80,
+    "num_replans": 0,
+    "total_time": 0.000919342041015625,
+    "replanning_time": 0.0,
+    "path": 80,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 1,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 80,
+    "num_replans": 0,
+    "total_time": 0.000885009765625,
+    "replanning_time": 0.0,
+    "path": 80,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 2,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 80,
+    "num_replans": 0,
+    "total_time": 0.0014083385467529297,
+    "replanning_time": 0.0,
+    "path": 80,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 0,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 80,
+    "num_replans": 0,
+    "total_time": 0.05750155448913574,
+    "replanning_time": 0.0,
+    "path": 80,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 1,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 80,
+    "num_replans": 0,
+    "total_time": 0.06201982498168945,
+    "replanning_time": 0.0,
+    "path": 80,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 2,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 80,
+    "num_replans": 0,
+    "total_time": 0.06626558303833008,
+    "replanning_time": 0.0,
+    "path": 80,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 0,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 82,
+    "num_replans": 0,
+    "total_time": 0.07656264305114746,
+    "replanning_time": 0.0,
+    "path": 82,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 1,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 80,
+    "num_replans": 0,
+    "total_time": 0.060512542724609375,
+    "replanning_time": 0.0,
+    "path": 80,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 2,
+    "start_cell": [
+      261,
+      301
+    ],
+    "goal_cell": [
+      251,
+      232
+    ],
+    "success": true,
+    "path_length": 80,
+    "num_replans": 0,
+    "total_time": 0.06546974182128906,
+    "replanning_time": 0.0,
+    "path": 80,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 0,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 170,
+    "num_replans": 0,
+    "total_time": 0.002688884735107422,
+    "replanning_time": 0.0,
+    "path": 170,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 1,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 170,
+    "num_replans": 0,
+    "total_time": 0.005433797836303711,
+    "replanning_time": 0.0,
+    "path": 170,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 2,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 170,
+    "num_replans": 0,
+    "total_time": 0.002450227737426758,
+    "replanning_time": 0.0,
+    "path": 170,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 0,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 170,
+    "num_replans": 0,
+    "total_time": 0.291165828704834,
+    "replanning_time": 0.0,
+    "path": 170,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 1,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 170,
+    "num_replans": 0,
+    "total_time": 0.27712559700012207,
+    "replanning_time": 0.0,
+    "path": 170,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 2,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 172,
+    "num_replans": 0,
+    "total_time": 0.2822391986846924,
+    "replanning_time": 0.0,
+    "path": 172,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 0,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 170,
+    "num_replans": 0,
+    "total_time": 0.28542399406433105,
+    "replanning_time": 0.0,
+    "path": 170,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 1,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 170,
+    "num_replans": 0,
+    "total_time": 0.2932732105255127,
+    "replanning_time": 0.0,
+    "path": 170,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 2,
+    "start_cell": [
+      129,
+      309
+    ],
+    "goal_cell": [
+      74,
+      195
+    ],
+    "success": true,
+    "path_length": 170,
+    "num_replans": 0,
+    "total_time": 0.3243217468261719,
+    "replanning_time": 0.0,
+    "path": 170,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 0,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 295,
+    "num_replans": 0,
+    "total_time": 0.09384822845458984,
+    "replanning_time": 0.0,
+    "path": 295,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 1,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 295,
+    "num_replans": 0,
+    "total_time": 0.09080386161804199,
+    "replanning_time": 0.0,
+    "path": 295,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "baseline",
+    "trial_id": 2,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 295,
+    "num_replans": 0,
+    "total_time": 0.0940401554107666,
+    "replanning_time": 0.0,
+    "path": 295,
+    "corrupted_cells": 0
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 0,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 231,
+    "num_replans": 0,
+    "total_time": 0.5205724239349365,
+    "replanning_time": 0.0,
+    "path": 231,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 1,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 231,
+    "num_replans": 0,
+    "total_time": 0.5361225605010986,
+    "replanning_time": 0.0,
+    "path": 231,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "corruption",
+    "trial_id": 2,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 231,
+    "num_replans": 0,
+    "total_time": 0.5646874904632568,
+    "replanning_time": 0.0,
+    "path": 231,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 0,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 231,
+    "num_replans": 0,
+    "total_time": 0.5344176292419434,
+    "replanning_time": 0.0,
+    "path": 231,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 1,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 231,
+    "num_replans": 0,
+    "total_time": 2.118840217590332,
+    "replanning_time": 0.0,
+    "path": 231,
+    "corrupted_cells": 38440
+  },
+  {
+    "scenario": "full_system",
+    "trial_id": 2,
+    "start_cell": [
+      162,
+      301
+    ],
+    "goal_cell": [
+      339,
+      248
+    ],
+    "success": true,
+    "path_length": 231,
+    "num_replans": 0,
+    "total_time": 0.547515869140625,
+    "replanning_time": 0.0,
+    "path": 231,
+    "corrupted_cells": 38440
+  }
+]

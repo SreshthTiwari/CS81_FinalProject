@@ -1,0 +1,111 @@
+[0.000000] (-) TimerEvent: {}
+[0.000504] (final_proj) JobQueued: {'identifier': 'final_proj', 'dependencies': OrderedDict()}
+[0.000622] (final_proj) JobStarted: {'identifier': 'final_proj'}
+[0.098729] (-) TimerEvent: {}
+[0.199104] (-) TimerEvent: {}
+[0.299536] (-) TimerEvent: {}
+[0.400157] (-) TimerEvent: {}
+[0.500654] (-) TimerEvent: {}
+[0.601024] (-) TimerEvent: {}
+[0.701409] (-) TimerEvent: {}
+[0.801840] (-) TimerEvent: {}
+[0.847275] (final_proj) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/final_proj', 'build', '--build-base', '/home/sreshth/ros2_ws/build/final_proj/build', 'install', '--record', '/home/sreshth/ros2_ws/build/final_proj/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sreshth/ros2_ws/src/final_proj', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sreshth', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/sreshth', 'OLDPWD': '/home/sreshth', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sreshth/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sreshth', 'NAME': '2VSGNN3', 'WSL_INTEROP': '/run/WSL/1747_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/Docker/host/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/Users/User/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/User/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/User/AppData/Local/Programs/Ollama:/mnt/c/Users/User/AppData/Local/Programs/cursor/resources/app/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/sreshth/ros2_ws/build/final_proj', 'TURTLEBOT3_MODEL': 'burger', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sreshth/ros2_ws/build/final_proj/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[0.902061] (-) TimerEvent: {}
+[1.002449] (-) TimerEvent: {}
+[1.019890] (final_proj) StdoutLine: {'line': b'running egg_info\n'}
+[1.020207] (final_proj) StdoutLine: {'line': b'creating ../../build/final_proj/final_proj.egg-info\n'}
+[1.020484] (final_proj) StdoutLine: {'line': b'writing ../../build/final_proj/final_proj.egg-info/PKG-INFO\n'}
+[1.020814] (final_proj) StdoutLine: {'line': b'writing dependency_links to ../../build/final_proj/final_proj.egg-info/dependency_links.txt\n'}
+[1.020872] (final_proj) StdoutLine: {'line': b'writing entry points to ../../build/final_proj/final_proj.egg-info/entry_points.txt\n'}
+[1.020912] (final_proj) StdoutLine: {'line': b'writing requirements to ../../build/final_proj/final_proj.egg-info/requires.txt\n'}
+[1.020954] (final_proj) StdoutLine: {'line': b'writing top-level names to ../../build/final_proj/final_proj.egg-info/top_level.txt\n'}
+[1.021074] (final_proj) StdoutLine: {'line': b"writing manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'\n"}
+[1.022854] (final_proj) StdoutLine: {'line': b"reading manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'\n"}
+[1.023557] (final_proj) StdoutLine: {'line': b"writing manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'\n"}
+[1.023661] (final_proj) StdoutLine: {'line': b'running build\n'}
+[1.023705] (final_proj) StdoutLine: {'line': b'running build_py\n'}
+[1.023745] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/build/final_proj/build\n'}
+[1.023919] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/build/final_proj/build/lib\n'}
+[1.024185] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj\n'}
+[1.024395] (final_proj) StdoutLine: {'line': b'copying final_proj/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj\n'}
+[1.024571] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment\n'}
+[1.024907] (final_proj) StdoutLine: {'line': b'copying final_proj/environment/map_loader.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment\n'}
+[1.025106] (final_proj) StdoutLine: {'line': b'copying final_proj/environment/context_extractor.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment\n'}
+[1.025161] (final_proj) StdoutLine: {'line': b'copying final_proj/environment/corruption.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment\n'}
+[1.025202] (final_proj) StdoutLine: {'line': b'copying final_proj/environment/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment\n'}
+[1.025386] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning\n'}
+[1.025614] (final_proj) StdoutLine: {'line': b'copying final_proj/planning/astar.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning\n'}
+[1.025699] (final_proj) StdoutLine: {'line': b'copying final_proj/planning/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning\n'}
+[1.025865] (final_proj) StdoutLine: {'line': b'copying final_proj/planning/replanner.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning\n'}
+[1.025949] (final_proj) StdoutLine: {'line': b'copying final_proj/planning/costmap.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning\n'}
+[1.026055] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes\n'}
+[1.026253] (final_proj) StdoutLine: {'line': b'copying final_proj/nodes/nav_node.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes\n'}
+[1.026476] (final_proj) StdoutLine: {'line': b'copying final_proj/nodes/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes\n'}
+[1.026536] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm\n'}
+[1.026737] (final_proj) StdoutLine: {'line': b'copying final_proj/llm/prompt_builder.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm\n'}
+[1.027059] (final_proj) StdoutLine: {'line': b'copying final_proj/llm/response_parser.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm\n'}
+[1.027286] (final_proj) StdoutLine: {'line': b'copying final_proj/llm/client.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm\n'}
+[1.027794] (final_proj) StdoutLine: {'line': b'copying final_proj/llm/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm\n'}
+[1.027959] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory\n'}
+[1.028071] (final_proj) StdoutLine: {'line': b'copying final_proj/memory/skill_store.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory\n'}
+[1.028559] (final_proj) StdoutLine: {'line': b'copying final_proj/memory/similarity.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory\n'}
+[1.029303] (final_proj) StdoutLine: {'line': b'copying final_proj/memory/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory\n'}
+[1.029535] (final_proj) StdoutLine: {'line': b'running install\n'}
+[1.029807] (final_proj) StdoutLine: {'line': b'running install_lib\n'}
+[1.030535] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj\n'}
+[1.030836] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment\n'}
+[1.031217] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment/map_loader.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment\n'}
+[1.031473] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment/context_extractor.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment\n'}
+[1.031788] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment/corruption.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment\n'}
+[1.031892] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment\n'}
+[1.032133] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning\n'}
+[1.032200] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning/astar.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning\n'}
+[1.032397] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning\n'}
+[1.032633] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning/replanner.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning\n'}
+[1.032762] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning/costmap.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning\n'}
+[1.032985] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes\n'}
+[1.033105] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes/nav_node.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes\n'}
+[1.033346] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes\n'}
+[1.033459] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm\n'}
+[1.033780] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm/prompt_builder.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm\n'}
+[1.033977] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm/response_parser.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm\n'}
+[1.034261] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm/client.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm\n'}
+[1.034354] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm\n'}
+[1.034405] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory\n'}
+[1.034675] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory/skill_store.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory\n'}
+[1.034814] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory/similarity.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory\n'}
+[1.034867] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory\n'}
+[1.035093] (final_proj) StdoutLine: {'line': b'copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj\n'}
+[1.035339] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment/map_loader.py to map_loader.cpython-310.pyc\n'}
+[1.036149] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment/context_extractor.py to context_extractor.cpython-310.pyc\n'}
+[1.036497] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment/corruption.py to corruption.cpython-310.pyc\n'}
+[1.036804] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment/__init__.py to __init__.cpython-310.pyc\n'}
+[1.037027] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning/astar.py to astar.cpython-310.pyc\n'}
+[1.037680] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning/__init__.py to __init__.cpython-310.pyc\n'}
+[1.037912] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning/replanner.py to replanner.cpython-310.pyc\n'}
+[1.038380] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning/costmap.py to costmap.cpython-310.pyc\n'}
+[1.038985] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes/nav_node.py to nav_node.cpython-310.pyc\n'}
+[1.039557] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes/__init__.py to __init__.cpython-310.pyc\n'}
+[1.039649] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm/prompt_builder.py to prompt_builder.cpython-310.pyc\n'}
+[1.039955] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm/response_parser.py to response_parser.cpython-310.pyc\n'}
+[1.040226] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm/client.py to client.cpython-310.pyc\n'}
+[1.040471] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm/__init__.py to __init__.cpython-310.pyc\n'}
+[1.040702] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory/skill_store.py to skill_store.cpython-310.pyc\n'}
+[1.041340] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory/similarity.py to similarity.cpython-310.pyc\n'}
+[1.041841] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory/__init__.py to __init__.cpython-310.pyc\n'}
+[1.042199] (final_proj) StdoutLine: {'line': b'byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/__init__.py to __init__.cpython-310.pyc\n'}
+[1.042320] (final_proj) StdoutLine: {'line': b'running install_data\n'}
+[1.042379] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/share/ament_index\n'}
+[1.042660] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/share/ament_index/resource_index\n'}
+[1.043020] (final_proj) StdoutLine: {'line': b'creating /home/sreshth/ros2_ws/install/final_proj/share/ament_index/resource_index/packages\n'}
+[1.043137] (final_proj) StdoutLine: {'line': b'copying resource/final_proj -> /home/sreshth/ros2_ws/install/final_proj/share/ament_index/resource_index/packages\n'}
+[1.043418] (final_proj) StdoutLine: {'line': b'copying package.xml -> /home/sreshth/ros2_ws/install/final_proj/share/final_proj\n'}
+[1.043508] (final_proj) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.046010] (final_proj) StdoutLine: {'line': b'Copying ../../build/final_proj/final_proj.egg-info to /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj-0.0.0-py3.10.egg-info\n'}
+[1.047318] (final_proj) StdoutLine: {'line': b'running install_scripts\n'}
+[1.064283] (final_proj) StdoutLine: {'line': b'Installing nav_node script to /home/sreshth/ros2_ws/install/final_proj/lib/final_proj\n'}
+[1.065124] (final_proj) StdoutLine: {'line': b"writing list of installed files to '/home/sreshth/ros2_ws/build/final_proj/install.log'\n"}
+[1.083836] (final_proj) CommandEnded: {'returncode': 0}
+[1.102600] (-) TimerEvent: {}
+[1.104836] (final_proj) JobEnded: {'identifier': 'final_proj', 'rc': 0}
+[1.105144] (-) EventReactorShutdown: {}

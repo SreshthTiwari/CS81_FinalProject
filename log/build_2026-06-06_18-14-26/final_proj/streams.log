@@ -1,0 +1,25 @@
+[0.887s] Invoking command in '/home/sreshth/ros2_ws/src/final_proj': PYTHONPATH=/home/sreshth/ros2_ws/build/final_proj/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/final_proj build --build-base /home/sreshth/ros2_ws/build/final_proj/build install --record /home/sreshth/ros2_ws/build/final_proj/install.log --single-version-externally-managed install_data
+[1.098s] running egg_info
+[1.099s] writing ../../build/final_proj/final_proj.egg-info/PKG-INFO
+[1.100s] writing dependency_links to ../../build/final_proj/final_proj.egg-info/dependency_links.txt
+[1.100s] writing entry points to ../../build/final_proj/final_proj.egg-info/entry_points.txt
+[1.100s] writing requirements to ../../build/final_proj/final_proj.egg-info/requires.txt
+[1.100s] writing top-level names to ../../build/final_proj/final_proj.egg-info/top_level.txt
+[1.104s] reading manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'
+[1.111s] writing manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'
+[1.111s] running build
+[1.111s] running build_py
+[1.112s] copying final_proj/nodes/orchestrator.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes
+[1.114s] running install
+[1.114s] running install_lib
+[1.119s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes/orchestrator.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes
+[1.121s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes/orchestrator.py to orchestrator.cpython-310.pyc
+[1.124s] running install_data
+[1.124s] running install_egg_info
+[1.127s] removing '/home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj-0.0.0-py3.10.egg-info' (and everything under it)
+[1.127s] Copying ../../build/final_proj/final_proj.egg-info to /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj-0.0.0-py3.10.egg-info
+[1.130s] running install_scripts
+[1.153s] Installing nav_node script to /home/sreshth/ros2_ws/install/final_proj/lib/final_proj
+[1.153s] Installing orchestrator script to /home/sreshth/ros2_ws/install/final_proj/lib/final_proj
+[1.154s] writing list of installed files to '/home/sreshth/ros2_ws/build/final_proj/install.log'
+[1.173s] Invoked command in '/home/sreshth/ros2_ws/src/final_proj' returned '0': PYTHONPATH=/home/sreshth/ros2_ws/build/final_proj/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/final_proj build --build-base /home/sreshth/ros2_ws/build/final_proj/build install --record /home/sreshth/ros2_ws/build/final_proj/install.log --single-version-externally-managed install_data

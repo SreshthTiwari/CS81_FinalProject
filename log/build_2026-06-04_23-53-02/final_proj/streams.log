@@ -1,0 +1,95 @@
+[0.851s] Invoking command in '/home/sreshth/ros2_ws/src/final_proj': PYTHONPATH=/home/sreshth/ros2_ws/build/final_proj/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/final_proj build --build-base /home/sreshth/ros2_ws/build/final_proj/build install --record /home/sreshth/ros2_ws/build/final_proj/install.log --single-version-externally-managed install_data
+[1.020s] running egg_info
+[1.020s] creating ../../build/final_proj/final_proj.egg-info
+[1.020s] writing ../../build/final_proj/final_proj.egg-info/PKG-INFO
+[1.020s] writing dependency_links to ../../build/final_proj/final_proj.egg-info/dependency_links.txt
+[1.020s] writing entry points to ../../build/final_proj/final_proj.egg-info/entry_points.txt
+[1.020s] writing requirements to ../../build/final_proj/final_proj.egg-info/requires.txt
+[1.020s] writing top-level names to ../../build/final_proj/final_proj.egg-info/top_level.txt
+[1.020s] writing manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'
+[1.022s] reading manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'
+[1.023s] writing manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'
+[1.023s] running build
+[1.023s] running build_py
+[1.023s] creating /home/sreshth/ros2_ws/build/final_proj/build
+[1.023s] creating /home/sreshth/ros2_ws/build/final_proj/build/lib
+[1.024s] creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj
+[1.024s] copying final_proj/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj
+[1.024s] creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment
+[1.024s] copying final_proj/environment/map_loader.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment
+[1.024s] copying final_proj/environment/context_extractor.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment
+[1.025s] copying final_proj/environment/corruption.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment
+[1.025s] copying final_proj/environment/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment
+[1.025s] creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning
+[1.025s] copying final_proj/planning/astar.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning
+[1.025s] copying final_proj/planning/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning
+[1.025s] copying final_proj/planning/replanner.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning
+[1.025s] copying final_proj/planning/costmap.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning
+[1.025s] creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes
+[1.026s] copying final_proj/nodes/nav_node.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes
+[1.026s] copying final_proj/nodes/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes
+[1.026s] creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm
+[1.026s] copying final_proj/llm/prompt_builder.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm
+[1.027s] copying final_proj/llm/response_parser.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm
+[1.027s] copying final_proj/llm/client.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm
+[1.027s] copying final_proj/llm/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm
+[1.027s] creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory
+[1.027s] copying final_proj/memory/skill_store.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory
+[1.029s] copying final_proj/memory/similarity.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory
+[1.029s] copying final_proj/memory/__init__.py -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory
+[1.029s] running install
+[1.029s] running install_lib
+[1.030s] creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj
+[1.030s] creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment
+[1.031s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment/map_loader.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment
+[1.031s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment/context_extractor.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment
+[1.031s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment/corruption.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment
+[1.031s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/environment/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment
+[1.032s] creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning
+[1.032s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning/astar.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning
+[1.032s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning
+[1.032s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning/replanner.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning
+[1.032s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/planning/costmap.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning
+[1.032s] creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes
+[1.033s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes/nav_node.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes
+[1.033s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/nodes/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes
+[1.033s] creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm
+[1.033s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm/prompt_builder.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm
+[1.033s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm/response_parser.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm
+[1.034s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm/client.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm
+[1.034s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/llm/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm
+[1.034s] creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory
+[1.034s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory/skill_store.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory
+[1.034s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory/similarity.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory
+[1.034s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/memory/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory
+[1.034s] copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/__init__.py -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj
+[1.035s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment/map_loader.py to map_loader.cpython-310.pyc
+[1.036s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment/context_extractor.py to context_extractor.cpython-310.pyc
+[1.036s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment/corruption.py to corruption.cpython-310.pyc
+[1.036s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/environment/__init__.py to __init__.cpython-310.pyc
+[1.036s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning/astar.py to astar.cpython-310.pyc
+[1.037s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning/__init__.py to __init__.cpython-310.pyc
+[1.037s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning/replanner.py to replanner.cpython-310.pyc
+[1.038s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/planning/costmap.py to costmap.cpython-310.pyc
+[1.038s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes/nav_node.py to nav_node.cpython-310.pyc
+[1.039s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/nodes/__init__.py to __init__.cpython-310.pyc
+[1.039s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm/prompt_builder.py to prompt_builder.cpython-310.pyc
+[1.039s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm/response_parser.py to response_parser.cpython-310.pyc
+[1.040s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm/client.py to client.cpython-310.pyc
+[1.040s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/llm/__init__.py to __init__.cpython-310.pyc
+[1.040s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory/skill_store.py to skill_store.cpython-310.pyc
+[1.041s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory/similarity.py to similarity.cpython-310.pyc
+[1.041s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/memory/__init__.py to __init__.cpython-310.pyc
+[1.042s] byte-compiling /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/__init__.py to __init__.cpython-310.pyc
+[1.042s] running install_data
+[1.042s] creating /home/sreshth/ros2_ws/install/final_proj/share/ament_index
+[1.042s] creating /home/sreshth/ros2_ws/install/final_proj/share/ament_index/resource_index
+[1.042s] creating /home/sreshth/ros2_ws/install/final_proj/share/ament_index/resource_index/packages
+[1.043s] copying resource/final_proj -> /home/sreshth/ros2_ws/install/final_proj/share/ament_index/resource_index/packages
+[1.043s] copying package.xml -> /home/sreshth/ros2_ws/install/final_proj/share/final_proj
+[1.043s] running install_egg_info
+[1.046s] Copying ../../build/final_proj/final_proj.egg-info to /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj-0.0.0-py3.10.egg-info
+[1.047s] running install_scripts
+[1.064s] Installing nav_node script to /home/sreshth/ros2_ws/install/final_proj/lib/final_proj
+[1.065s] writing list of installed files to '/home/sreshth/ros2_ws/build/final_proj/install.log'
+[1.083s] Invoked command in '/home/sreshth/ros2_ws/src/final_proj' returned '0': PYTHONPATH=/home/sreshth/ros2_ws/build/final_proj/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/final_proj build --build-base /home/sreshth/ros2_ws/build/final_proj/build install --record /home/sreshth/ros2_ws/build/final_proj/install.log --single-version-externally-managed install_data

@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/final_proj/final_proj.egg-info/PKG-INFO
+writing dependency_links to ../../build/final_proj/final_proj.egg-info/dependency_links.txt
+writing entry points to ../../build/final_proj/final_proj.egg-info/entry_points.txt
+writing requirements to ../../build/final_proj/final_proj.egg-info/requires.txt
+writing top-level names to ../../build/final_proj/final_proj.egg-info/top_level.txt
+reading manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'
+writing manifest file '../../build/final_proj/final_proj.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/data
+copying final_proj/data/map.yaml -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/data
+copying final_proj/data/house.pgm -> /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/data
+running install
+running install_lib
+creating /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/data
+copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/data/house.pgm -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/data
+copying /home/sreshth/ros2_ws/build/final_proj/build/lib/final_proj/data/map.yaml -> /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj/data
+running install_data
+running install_egg_info
+removing '/home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/final_proj/final_proj.egg-info to /home/sreshth/ros2_ws/install/final_proj/lib/python3.10/site-packages/final_proj-0.0.0-py3.10.egg-info
+running install_scripts
+Installing nav_node script to /home/sreshth/ros2_ws/install/final_proj/lib/final_proj
+Installing orchestrator script to /home/sreshth/ros2_ws/install/final_proj/lib/final_proj
+writing list of installed files to '/home/sreshth/ros2_ws/build/final_proj/install.log'

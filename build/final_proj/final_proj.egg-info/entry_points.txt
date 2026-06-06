@@ -1,0 +1,4 @@
+[console_scripts]
+nav_node = final_proj.nodes.nav_node:main
+orchestrator = final_proj.nodes.orchestrator:main
+
