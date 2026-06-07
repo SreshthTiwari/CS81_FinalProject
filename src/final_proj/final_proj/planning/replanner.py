@@ -18,7 +18,7 @@ class Replanner:
         }
 
     def get_path_neighborhood(self, grid, path, radius=2):
-        uncertain = []
+        interesting = []
         height, width = grid.shape
 
         for cell in path:
@@ -28,19 +28,20 @@ class Replanner:
                     x = cx + dx
                     y = cy + dy
                     if 0 <= x < width and 0 <= y < height:
-                        if grid[y, x] == -1:
-                            uncertain.append((x, y))
+                        if grid[y, x] == -1 or grid[y, x] == 1:
+                            interesting.append((x, y))
 
-        return list(set(uncertain))
+        return list(set(interesting))
 
-    def classify_region(self, grid, robot_pose, goal, target_cell, skill_context=None):
+    def classify_region(self, grid, robot_pose, goal, target_cell, skill_context=None, situation_type=None):
         patch = self.context_extractor.extract_patch(grid, target_cell)
         prompt = self.prompt_builder.build_region_prompt(
             robot_pose=robot_pose,
             goal=goal,
             local_patch=patch,
-            uncertain_cells=[target_cell],
-            skill_context=skill_context
+            observed_cells=[target_cell],
+            skill_context=skill_context,
+            situation_type=situation_type
         )
         response_text = self.llm_client.query(prompt)
         self.last_prompt = prompt
@@ -51,8 +52,9 @@ class Replanner:
 
     def apply_decision_to_grid(self, grid, target_cells, decision):
         modified = grid.copy()
+        action = decision.get("recommended_action", "")
 
-        if decision["label"] == "likely_blocked":
+        if decision["label"] == "likely_blocked" and action in ("replan_immediately", "avoid"):
             for x, y in target_cells:
                 modified[y, x] = 1
 
@@ -61,26 +63,68 @@ class Replanner:
                 if modified[y, x] == -1:
                     modified[y, x] = 0
 
-        else:
-            for x, y in target_cells:
-                if modified[y, x] == -1:
-                    modified[y, x] = -1
-
         return modified
 
-    def replan(self, grid, start, goal, path, robot_pose, skill_context=None):
-        uncertain_cells = self.get_path_neighborhood(grid, path)
-        if not uncertain_cells:
+    def replan(self, grid, start, goal, path, robot_pose, skill_context=None, original_path=None, situation_type=None):
+        path_to_scan = path if path else original_path or []
+        interesting_cells = self.get_path_neighborhood(grid, path_to_scan)
+        if not interesting_cells:
             return grid, None
 
-        target_cell = uncertain_cells[0]
+        target_cell = interesting_cells[0]
         decision, patch = self.classify_region(
             grid=grid,
             robot_pose=robot_pose,
             goal=goal,
             target_cell=target_cell,
-            skill_context=skill_context
+            skill_context=skill_context,
+            situation_type=situation_type
         )
 
         modified_grid = self.apply_decision_to_grid(grid, [target_cell], decision)
+        return modified_grid, decision
+    def classify_temporal_obstacle(self, grids, robot_pose, goal, target_cell, skill_context=None, situation_type=None):
+        """Analyze obstacle across multiple timesteps."""
+        timestep_patches = []
+        for grid in grids:
+            patch = self.context_extractor.extract_patch(grid, target_cell)
+            timestep_patches.append(patch)
+
+        prompt = self.prompt_builder.build_temporal_obstacle_prompt(
+            robot_pose=robot_pose,
+            goal=goal,
+            timestep_patches=timestep_patches,
+            observed_cells=[target_cell],
+            num_timesteps=len(grids),
+            skill_context=skill_context,
+            situation_type=situation_type
+        )
+        response_text = self.llm_client.query(prompt)
+        self.last_prompt = prompt
+        self.last_response = response_text
+        self.last_patch = timestep_patches
+        result = self.response_parser.parse_temporal_obstacle_response(response_text)
+        return result
+
+    def replan_temporal(self, grids, start, goal, original_path, robot_pose, skill_context=None, situation_type=None, target_cell=None):
+        """Replan using temporal obstacle analysis."""
+        if not grids or not original_path:
+            return grids[0].copy() if grids else None, None
+
+        if target_cell is None:
+            interesting_cells = self.get_path_neighborhood(grids[0], original_path)
+            if not interesting_cells:
+                return grids[0].copy(), None
+            target_cell = interesting_cells[0]
+
+        decision = self.classify_temporal_obstacle(
+            grids=grids,
+            robot_pose=robot_pose,
+            goal=goal,
+            target_cell=target_cell,
+            skill_context=skill_context,
+            situation_type=situation_type
+        )
+
+        modified_grid = self.apply_decision_to_grid(grids[0], [target_cell], decision)
         return modified_grid, decision

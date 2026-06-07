@@ -19,6 +19,23 @@ class ResponseParser:
             "recommended_action": recommended_action
         }
 
+    def parse_temporal_obstacle_response(self, response_text):
+        data = json.loads(response_text.strip())
+        label = data.get("label", "uncertain")
+        movement_pattern = data.get("movement_pattern", "unknown")
+        confidence = data.get("confidence", 0.0)
+        if confidence is None:
+            confidence = 0.0
+        reason = data.get("reason", "")
+        recommended_action = data.get("recommended_action", "uncertain")
+        return {
+            "label": label,
+            "movement_pattern": movement_pattern,
+            "confidence": float(confidence),
+            "reason": reason,
+            "recommended_action": recommended_action
+        }
+
     def parse_skill_response(self, response_text):
         data = json.loads(response_text.strip())
         skill_id = data.get("skill_id", None)

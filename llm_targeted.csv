@@ -1,0 +1,11 @@
+test_id,test_type,expected_answer,actual_answer,success,start_x,start_y,goal_x,goal_y,corrupted_cells,corrupted_path_exists,corrupted_path_length,modified_path_exists,modified_path_length,decision_label,decision_confidence,decision_reason,decision_action
+1,sparse,keep_moving,replan,False,136,264,84,212,2023,True,105,True,105,likely_blocked,0.7,The uncertain cell is adjacent to occupied cells and likely blocks the route to the goal.,avoid
+2,sparse,keep_moving,replan,False,174,280,145,213,2023,True,97,True,97,likely_blocked,0.7,The uncertain cell is adjacent to occupied cells and likely blocks the route to the goal.,avoid
+3,sparse,keep_moving,replan,False,192,253,162,227,2023,True,57,True,57,likely_blocked,0.8,The uncertain cell is adjacent to occupied cells and likely blocks the route to the goal.,avoid
+4,sparse,keep_moving,keep_moving,True,135,216,112,281,2023,True,89,True,89,likely_free,0.8,The uncertain cell is bordered by free cells and lies along the path to the goal.,plan_through
+5,sparse,keep_moving,keep_moving,True,128,254,189,297,2023,True,105,True,105,likely_free,0.8,The uncertain cell is bordered by free cells and lies along the path to the goal.,plan_through
+6,clustered,replan,replan,True,314,251,165,300,42,True,277,True,277,likely_blocked,0.8,The uncertain cell is adjacent to occupied cells and likely blocks the route to the goal.,avoid
+7,clustered,replan,keep_moving,False,306,252,87,215,49,True,335,True,335,likely_free,0.8,The uncertain cell is bordered by free cells and lies along the path to the goal.,plan_through
+8,clustered,replan,replan,True,289,215,311,112,49,True,134,True,134,likely_blocked,0.8,The uncertain cell is adjacent to occupied cells and likely blocks the route to the goal.,avoid
+9,clustered,replan,replan,True,131,239,124,230,49,True,17,True,17,likely_blocked,0.8,The uncertain cell is adjacent to occupied cells and likely blocks the route to the goal.,avoid
+10,clustered,replan,replan,True,223,223,315,175,35,True,265,True,265,likely_blocked,0.8,The uncertain cell is adjacent to occupied cells and likely blocks the route to the goal.,avoid
