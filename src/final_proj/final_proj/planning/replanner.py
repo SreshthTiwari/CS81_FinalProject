@@ -115,7 +115,49 @@ class Replanner:
             interesting_cells = self.get_path_neighborhood(grids[0], original_path)
             if not interesting_cells:
                 return grids[0].copy(), None
-            target_cell = interesting_cells[0]
+
+            original_path_set = set(original_path)
+            blocked_path_cells = [cell for cell in interesting_cells
+                                  if cell in original_path_set and grids[0][cell[1], cell[0]] == 1]
+            if not blocked_path_cells:
+                return grids[0].copy(), {
+                    "label": "likely_free",
+                    "movement_pattern": "vanishing",
+                    "confidence": 0.85,
+                    "reason": "No blockage remains on the current planned path.",
+                    "recommended_action": "plan_through"
+                }
+            target_cell = blocked_path_cells[0]
+
+        # Heuristic: if uncertain cells (-1) lie on the original path and persist across
+        # the majority of timesteps, treat them as a likely static blockage and replan.
+        try:
+            original_path_set = set(original_path)
+            persistent_uncertain = []
+            for cell in original_path_set:
+                x, y = cell
+                count_uncertain = 0
+                for g in grids:
+                    if g[y, x] == -1:
+                        count_uncertain += 1
+                if count_uncertain >= (len(grids) + 1) // 2:
+                    persistent_uncertain.append(cell)
+            if persistent_uncertain:
+                # mark these cells as blocked on a copy and recommend replanning
+                modified = grids[0].copy()
+                for x, y in persistent_uncertain:
+                    modified[y, x] = 1
+                decision = {
+                    "label": "likely_blocked",
+                    "movement_pattern": "static",
+                    "confidence": 0.9,
+                    "reason": "Uncertain observations persist on the planned path across timesteps",
+                    "recommended_action": "replan_immediately"
+                }
+                return modified, decision
+        except Exception:
+            # Fall back to classifier below on any failure
+            pass
 
         decision = self.classify_temporal_obstacle(
             grids=grids,

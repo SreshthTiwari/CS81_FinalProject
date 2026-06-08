@@ -62,7 +62,7 @@ class Corruptor:
         return corrupted
 
     def generate_moving_obstacle_sequence(self, grid, obstacle_path, num_timesteps=3):
-        """Generate a sequence of grids where an obstacle moves along a path.
+        """Generate a sequence of grids where an obstacle moves along a path, then off.
         
         Args:
             grid: original grid
@@ -71,37 +71,65 @@ class Corruptor:
             
         Returns:
             list of grids, one per timestep
+            
+        Behavior: Obstacle moves ON the path for the first ~2 timesteps, then moves OFF the path
+        for later timesteps so the path becomes clear again.
         """
         sequence = []
         half = 1
 
-        if not obstacle_path:
+        if not obstacle_path or len(obstacle_path) == 0:
             return [grid.copy() for _ in range(num_timesteps)]
 
-        # Choose distinct positions along the path so the obstacle clearly moves.
-        if len(obstacle_path) >= num_timesteps and num_timesteps > 1:
-            indices = [int(round(i * (len(obstacle_path) - 1) / (num_timesteps - 1))) for i in range(num_timesteps)]
-        else:
-            indices = list(range(len(obstacle_path)))
+        positions = []
+        on_path_steps = min(2, max(1, num_timesteps - 1))  # obstacle on path for first 1-2 timesteps
 
-        positions = [obstacle_path[i] for i in indices]
-
-        # If we still need extra steps, continue moving from the last position.
-        while len(positions) < num_timesteps:
-            last_x, last_y = positions[-1]
-            if len(positions) == 1:
-                # move horizontally if only one anchor position is available
-                next_x = min(last_x + 1, grid.shape[1] - 1)
-                next_y = last_y
+        # Phase 1: Obstacle moves ON the path for early timesteps
+        for t in range(on_path_steps):
+            if num_timesteps > 1 and on_path_steps > 1:
+                idx = int(round(t * (len(obstacle_path) - 1) / (on_path_steps - 1)))
             else:
-                prev_x, prev_y = positions[-2]
-                dx = last_x - prev_x
-                dy = last_y - prev_y
-                next_x = min(max(last_x + dx, 0), grid.shape[1] - 1)
-                next_y = min(max(last_y + dy, 0), grid.shape[0] - 1)
-            if (next_x, next_y) == positions[-1]:
-                next_x = min(last_x + 1, grid.shape[1] - 1)
-            positions.append((next_x, next_y))
+                idx = len(obstacle_path) // 2  # middle of path
+            idx = min(idx, len(obstacle_path) - 1)
+            positions.append(obstacle_path[idx])
+
+        # Phase 2: Obstacle moves OFF the path for later timesteps
+        if len(positions) < num_timesteps:
+            # Compute perpendicular direction from the end of the on-path segment
+            last_on_path = positions[-1]
+            if len(positions) >= 2:
+                prev_on_path = positions[-2]
+                dx = last_on_path[0] - prev_on_path[0]
+                dy = last_on_path[1] - prev_on_path[1]
+                # Perpendicular: rotate 90 degrees
+                perp_x, perp_y = -dy, dx
+            else:
+                # Fallback perpendicular direction
+                perp_x, perp_y = 1, 0
+
+            # Normalize perpendicular direction
+            if perp_x == 0 and perp_y == 0:
+                perp_x, perp_y = 1, 0
+
+            # Move obstacle off the path by stepping in perpendicular direction
+            current_x, current_y = last_on_path
+            step_size = 1
+            for t in range(on_path_steps, num_timesteps):
+                # Try moving in perpendicular direction with increasing offset
+                offset = (t - on_path_steps + 1) * step_size
+                target_x = current_x + perp_x * offset
+                target_y = current_y + perp_y * offset
+
+                # If out of bounds or hit wall, try opposite direction
+                if not (0 <= target_x < grid.shape[1] and 0 <= target_y < grid.shape[0]) or grid[target_y, target_x] != 0:
+                    target_x = current_x - perp_x * offset
+                    target_y = current_y - perp_y * offset
+
+                # If still invalid, clamp to boundaries
+                target_x = max(0, min(target_x, grid.shape[1] - 1))
+                target_y = max(0, min(target_y, grid.shape[0] - 1))
+
+                positions.append((target_x, target_y))
 
         for x, y in positions[:num_timesteps]:
             corrupted = grid.copy()
@@ -129,4 +157,73 @@ class Corruptor:
         """
         corrupted = self.inject_block(grid, blocked_region[:2], blocked_region[2:], blocked_value=1)
         sequence = [corrupted.copy() for _ in range(num_timesteps)]
+        return sequence
+
+    def generate_clustered_uncertainty_sequence(self, grid, num_timesteps=3, num_clusters=6, cluster_radius=2, jitter=1, force_centers=None):
+        """Generate clustered uncertain cells across the grid.
+
+        Creates small clusters (blobs) of uncertain cells that resemble occluding obstacles.
+        Clusters can jitter slightly over time to simulate sensing variation.
+        """
+        def sample_cluster_cells(cx, cy, radius):
+            cells = []
+            for dx in range(-radius, radius + 1):
+                for dy in range(-radius, radius + 1):
+                    # prefer cells within a circle to make roundish blobs
+                    if dx * dx + dy * dy <= radius * radius:
+                        x = cx + dx
+                        y = cy + dy
+                        if 0 <= x < grid.shape[1] and 0 <= y < grid.shape[0]:
+                            if grid[y, x] == 0:
+                                cells.append((x, y))
+            return cells
+
+        free_cells = np.column_stack(np.where(grid == 0))
+        if len(free_cells) == 0:
+            return [grid.copy() for _ in range(num_timesteps)]
+
+        sequence = []
+        # pick initial cluster centers. allow forcing some centers (e.g., on a path)
+        centers = []
+        if force_centers:
+            for (cx, cy) in force_centers:
+                # clamp and only keep if free in original grid
+                ncx = int(min(max(cx, 0), grid.shape[1] - 1))
+                ncy = int(min(max(cy, 0), grid.shape[0] - 1))
+                if grid[ncy, ncx] == 0:
+                    centers.append((ncx, ncy))
+
+        remaining = max(0, min(num_clusters, len(free_cells)) - len(centers))
+        if remaining > 0:
+            # sample additional random centers from free cells
+            available_idx = np.setdiff1d(np.arange(len(free_cells)), np.array([], dtype=int))
+            # If we already used some forced centers that coincide with free_cells, try to avoid duplicates by sampling
+            # randomly; simplest is to sample without replacement from all free_cells
+            chosen_idx = np.random.choice(len(free_cells), size=remaining, replace=False)
+            for i in chosen_idx:
+                centers.append(tuple(free_cells[i][::-1]))  # convert (row,col)->(x,y)
+
+        for t in range(num_timesteps):
+            corrupted = grid.copy()
+            # jitter centers slightly over time to simulate sensor variation
+            jittered_centers = []
+            for (cx, cy) in centers:
+                if jitter > 0:
+                    dx = int(np.round(np.random.uniform(-jitter, jitter)))
+                    dy = int(np.round(np.random.uniform(-jitter, jitter)))
+                else:
+                    dx = dy = 0
+                ncx = min(max(cx + dx, 0), grid.shape[1] - 1)
+                ncy = min(max(cy + dy, 0), grid.shape[0] - 1)
+                jittered_centers.append((ncx, ncy))
+
+            # for each cluster, mark a small blob as uncertain
+            for (cx, cy) in jittered_centers:
+                cluster_cells = sample_cluster_cells(cx, cy, cluster_radius)
+                for (x, y) in cluster_cells:
+                    if corrupted[y, x] == 0:
+                        corrupted[y, x] = self.uncertain_value
+
+            sequence.append(corrupted)
+
         return sequence
