@@ -1,0 +1,552 @@
+{
+  "missions": [
+    {
+      "mission": 10,
+      "path_length": 116,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 11,
+      "path_length": 411,
+      "reusable_segments": 3,
+      "cells_reused": 96
+    },
+    {
+      "mission": 12,
+      "path_length": 231,
+      "reusable_segments": 5,
+      "cells_reused": 160
+    },
+    {
+      "mission": 13,
+      "path_length": 349,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 14,
+      "path_length": 238,
+      "reusable_segments": 7,
+      "cells_reused": 221
+    },
+    {
+      "mission": 15,
+      "path_length": 84,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 16,
+      "path_length": 101,
+      "reusable_segments": 3,
+      "cells_reused": 95
+    },
+    {
+      "mission": 17,
+      "path_length": 236,
+      "reusable_segments": 4,
+      "cells_reused": 128
+    },
+    {
+      "mission": 18,
+      "path_length": 319,
+      "reusable_segments": 4,
+      "cells_reused": 128
+    },
+    {
+      "mission": 19,
+      "path_length": 124,
+      "reusable_segments": 1,
+      "cells_reused": 32
+    },
+    {
+      "mission": 20,
+      "path_length": 96,
+      "reusable_segments": 3,
+      "cells_reused": 95
+    },
+    {
+      "mission": 21,
+      "path_length": 431,
+      "reusable_segments": 8,
+      "cells_reused": 257
+    },
+    {
+      "mission": 22,
+      "path_length": 36,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 23,
+      "path_length": 290,
+      "reusable_segments": 5,
+      "cells_reused": 160
+    },
+    {
+      "mission": 24,
+      "path_length": 14,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 25,
+      "path_length": 215,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 26,
+      "path_length": 83,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 27,
+      "path_length": 88,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 28,
+      "path_length": 183,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 29,
+      "path_length": 101,
+      "reusable_segments": 1,
+      "cells_reused": 34
+    },
+    {
+      "mission": 30,
+      "path_length": 40,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 31,
+      "path_length": 94,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 32,
+      "path_length": 314,
+      "reusable_segments": 5,
+      "cells_reused": 160
+    },
+    {
+      "mission": 33,
+      "path_length": 195,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 34,
+      "path_length": 291,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 35,
+      "path_length": 81,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 36,
+      "path_length": 227,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 37,
+      "path_length": 234,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 38,
+      "path_length": 275,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 39,
+      "path_length": 127,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 40,
+      "path_length": 137,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 41,
+      "path_length": 423,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 42,
+      "path_length": 114,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 43,
+      "path_length": 83,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 44,
+      "path_length": 92,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 45,
+      "path_length": 266,
+      "reusable_segments": 5,
+      "cells_reused": 159
+    },
+    {
+      "mission": 46,
+      "path_length": 15,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 47,
+      "path_length": 75,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 48,
+      "path_length": 321,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 49,
+      "path_length": 119,
+      "reusable_segments": 1,
+      "cells_reused": 32
+    },
+    {
+      "mission": 50,
+      "path_length": 109,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 51,
+      "path_length": 116,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 52,
+      "path_length": 149,
+      "reusable_segments": 4,
+      "cells_reused": 128
+    },
+    {
+      "mission": 53,
+      "path_length": 94,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 54,
+      "path_length": 241,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 55,
+      "path_length": 244,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 56,
+      "path_length": 108,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 57,
+      "path_length": 301,
+      "reusable_segments": 4,
+      "cells_reused": 127
+    },
+    {
+      "mission": 58,
+      "path_length": 180,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 59,
+      "path_length": 216,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 60,
+      "path_length": 328,
+      "reusable_segments": 6,
+      "cells_reused": 191
+    },
+    {
+      "mission": 61,
+      "path_length": 261,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 62,
+      "path_length": 63,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 63,
+      "path_length": 83,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 64,
+      "path_length": 237,
+      "reusable_segments": 3,
+      "cells_reused": 96
+    },
+    {
+      "mission": 65,
+      "path_length": 140,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 66,
+      "path_length": 92,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 67,
+      "path_length": 315,
+      "reusable_segments": 2,
+      "cells_reused": 68
+    },
+    {
+      "mission": 68,
+      "path_length": 343,
+      "reusable_segments": 10,
+      "cells_reused": 323
+    },
+    {
+      "mission": 69,
+      "path_length": 348,
+      "reusable_segments": 6,
+      "cells_reused": 191
+    },
+    {
+      "mission": 70,
+      "path_length": 289,
+      "reusable_segments": 5,
+      "cells_reused": 159
+    },
+    {
+      "mission": 71,
+      "path_length": 257,
+      "reusable_segments": 7,
+      "cells_reused": 224
+    },
+    {
+      "mission": 72,
+      "path_length": 292,
+      "reusable_segments": 1,
+      "cells_reused": 34
+    },
+    {
+      "mission": 73,
+      "path_length": 269,
+      "reusable_segments": 4,
+      "cells_reused": 127
+    },
+    {
+      "mission": 74,
+      "path_length": 407,
+      "reusable_segments": 1,
+      "cells_reused": 34
+    },
+    {
+      "mission": 75,
+      "path_length": 171,
+      "reusable_segments": 1,
+      "cells_reused": 32
+    },
+    {
+      "mission": 76,
+      "path_length": 315,
+      "reusable_segments": 1,
+      "cells_reused": 34
+    },
+    {
+      "mission": 77,
+      "path_length": 223,
+      "reusable_segments": 2,
+      "cells_reused": 64
+    },
+    {
+      "mission": 78,
+      "path_length": 443,
+      "reusable_segments": 6,
+      "cells_reused": 191
+    },
+    {
+      "mission": 79,
+      "path_length": 290,
+      "reusable_segments": 4,
+      "cells_reused": 128
+    },
+    {
+      "mission": 80,
+      "path_length": 92,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 81,
+      "path_length": 368,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 82,
+      "path_length": 114,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 83,
+      "path_length": 158,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 84,
+      "path_length": 140,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 85,
+      "path_length": 113,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 86,
+      "path_length": 146,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 87,
+      "path_length": 386,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 88,
+      "path_length": 80,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 89,
+      "path_length": 105,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 90,
+      "path_length": 340,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 91,
+      "path_length": 194,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 92,
+      "path_length": 142,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 93,
+      "path_length": 439,
+      "reusable_segments": 4,
+      "cells_reused": 128
+    },
+    {
+      "mission": 94,
+      "path_length": 180,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 95,
+      "path_length": 21,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 96,
+      "path_length": 283,
+      "reusable_segments": 6,
+      "cells_reused": 191
+    },
+    {
+      "mission": 97,
+      "path_length": 234,
+      "reusable_segments": 1,
+      "cells_reused": 29
+    },
+    {
+      "mission": 98,
+      "path_length": 132,
+      "reusable_segments": 0,
+      "cells_reused": 0
+    },
+    {
+      "mission": 99,
+      "path_length": 318,
+      "reusable_segments": 6,
+      "cells_reused": 191
+    }
+  ],
+  "total_unique_segments": 52,
+  "total_new_missions_analyzed": 90,
+  "reuses_found": 46,
+  "total_cells_reused": 4766,
+  "average_reuse_per_mission": 52.955555555555556,
+  "missions_with_reuse": 46,
+  "reuse_percentage": 51.11111111111111,
+  "estimated_computation_savings": 57961
+}
